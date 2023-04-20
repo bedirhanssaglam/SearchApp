@@ -1,0 +1,1 @@
+enum ServiceEnums { users, info }
