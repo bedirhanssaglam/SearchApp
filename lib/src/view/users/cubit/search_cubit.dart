@@ -9,8 +9,8 @@ import '../service/i_users_service.dart';
 part 'search_state.dart';
 
 class SearchCubit extends Cubit<SearchState> {
-  //Normal [BLoC] can also be used,
-  //but I think [BLoC - Cubit] is more practical for this application.
+  /// Normal [BLoC] can also be used,
+  /// but I think [BLoC - Cubit] is more practical for this application.
   final IUsersService _usersService;
 
   SearchCubit(this._usersService) : super(SearchLoading()) {

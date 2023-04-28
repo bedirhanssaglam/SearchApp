@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:search_app/src/core/base/singleton/base_singleton.dart';
-import 'package:search_app/src/core/components/popup/user_info_popup.dart';
 import 'package:search_app/src/core/extensions/context_extensions.dart';
 import 'package:search_app/src/view/users/models/user_model.dart';
 import 'package:search_app/src/view/users/service/users_service.dart';
@@ -40,7 +39,7 @@ class _UserCardState extends State<UserCard> with BaseSingleton {
       elevation: 5,
       color: colors.mainColor,
       child: ListTile(
-        onTap: () => userInfoPopup(
+        onTap: () => popups.userInfoPopup(
           context,
           user: widget.user,
           userImage: userImage!,

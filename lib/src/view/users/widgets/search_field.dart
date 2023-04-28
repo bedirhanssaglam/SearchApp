@@ -52,8 +52,8 @@ class _SearchFieldState extends State<SearchField> with BaseSingleton {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: TextField(
-        //If we use [Form], we'll use [TextFormField] instead of [TextField],
-        //so we don't need [TextFormField] in this application.
+        /// If we use [Form], we'll use [TextFormField] instead of [TextField],
+        /// so we don't need [TextFormField] in this application.
         controller: widget.controller,
         onChanged: _onItemChanged,
         cursorColor: colors.mainColor,
